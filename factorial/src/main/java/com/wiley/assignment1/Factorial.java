@@ -23,9 +23,9 @@ public class Factorial {
 
         //Check if input is an int
         if (this.scanner.hasNextInt()) {
-            int userInput = this.scanner.nextInt();
-            if (userInput >= 1 && userInput <= 10) { //Check if int is between 1 and 10 inclusive
-                return userInput; //return valid int
+            num = this.scanner.nextInt();
+            if (num >= 1 && num <= 10) { //Check if int is between 1 and 10 inclusive
+                return num; //return valid int
             } else {
                 this.printStream.print("Invalid entry. Please enter an integer between 1 and 10, inclusive.");
                 return -1;
